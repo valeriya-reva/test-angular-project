@@ -1,0 +1,10 @@
+<form [formGroup]="searchForm" class="search-form">
+  <mat-form-field class="example-full-width" [floatLabel]="'never'">
+    <mat-label>Search your book</mat-label>
+    <input
+      formControlName="search"
+      (keyup)="search($event.target['value'])"
+      type="search"
+      matInput>
+  </mat-form-field>
+</form>
